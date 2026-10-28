@@ -1,6 +1,10 @@
 resource "azurerm_resource_group" "rg" {
   name = "testrg"
   location = "eastus"
+  tags ={
+    env="test"
+    owner="abddulhcptest"
+  }
 }
 
 resource "azurerm_virtual_network" "vnet" {
